@@ -20,6 +20,8 @@ public class CavaloRepository
     {
         var resultado = new List<CavaloRegInfo>();
 
+        var nomeUpper = iNome?.ToUpperInvariant() ?? string.Empty;
+
         const string sql = @"
                 SELECT 
                     COALESCE(T1.REG_REG, C1.CAV_REG) AS REG, 
@@ -27,12 +29,12 @@ public class CavaloRepository
                     C1.CAV_ASTERISCO 
                 FROM ABCCA.CAVALO C1
                 LEFT JOIN ABCCA.REG T1 ON C1.CAV_SEQ = T1.REG_CAV_SEQ
-                WHERE C1.CAV_NOM_SACEN LIKE '%' || :iNome || '%'
+                WHERE UPPER(C1.CAV_NOM_SACEN) LIKE '%' || :iNome || '%'
                 ORDER BY C1.CAV_NOM";
 
-        _logger.LogDebug("Executando SQL: {Sql} | Parâmetros: {{iNome: {INome}}}", sql, iNome);
+        _logger.LogDebug("Executando SQL: {Sql} | Parâmetros: {{iNome: {INome}}}", sql, nomeUpper);
 
-        var sqlComParametro = sql.Replace(":iNome", $"'{iNome}'");
+        var sqlComParametro = sql.Replace(":iNome", $"'{nomeUpper}'");
         _logger.LogDebug("SQL com parâmetro: {Sql}", sqlComParametro);
 
         using (var connection = new OracleConnection(_connectionString))
@@ -42,7 +44,7 @@ public class CavaloRepository
             using (var command = new OracleCommand(sql, connection))
             {
                 command.BindByName = true;
-                var param = new OracleParameter("iNome", OracleDbType.Varchar2, iNome, ParameterDirection.Input);
+                var param = new OracleParameter("iNome", OracleDbType.Varchar2, nomeUpper, ParameterDirection.Input);
                 command.Parameters.Add(param);
 
                 _logger.LogDebug("Parâmetro Oracle: ParameterName={ParameterName}, OracleDbType={OracleDbType}, Value={Value}", 

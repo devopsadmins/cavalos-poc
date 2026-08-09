@@ -44,3 +44,4 @@ C:\Users\EVERTON\source\repos\CavalosPOC\CavalosPOC\obj\Debug\net10.0\refint\Cav
 C:\Users\EVERTON\source\repos\CavalosPOC\CavalosPOC\obj\Debug\net10.0\CavalosPOC.pdb
 C:\Users\EVERTON\source\repos\CavalosPOC\CavalosPOC\obj\Debug\net10.0\CavalosPOC.genruntimeconfig.cache
 C:\Users\EVERTON\source\repos\CavalosPOC\CavalosPOC\obj\Debug\net10.0\ref\CavalosPOC.dll
+C:\Users\EVERTON\source\repos\CavalosPOC\CavalosPOC\obj\Debug\net10.0\CavalosPOC.sourcelink.json
