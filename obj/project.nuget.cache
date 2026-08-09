@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DbEs8dPPyFk=",
+  "dgSpecHash": "wrI0tv0sc5A=",
   "success": true,
   "projectFilePath": "C:\\Users\\EVERTON\\source\\repos\\CavalosPOC\\CavalosPOC\\CavalosPOC.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,6 @@
     "C:\\Users\\EVERTON\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.0\\microsoft.entityframeworkcore.analyzers.10.0.0.nupkg.sha512",
     "C:\\Users\\EVERTON\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\10.0.0\\microsoft.entityframeworkcore.relational.10.0.0.nupkg.sha512",
     "C:\\Users\\EVERTON\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
-    "C:\\Users\\EVERTON\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.23.0\\microsoft.visualstudio.azure.containers.tools.targets.1.23.0.nupkg.sha512",
     "C:\\Users\\EVERTON\\.nuget\\packages\\oracle.entityframeworkcore\\10.23.26300\\oracle.entityframeworkcore.10.23.26300.nupkg.sha512",
     "C:\\Users\\EVERTON\\.nuget\\packages\\oracle.manageddataaccess.core\\23.26.300\\oracle.manageddataaccess.core.23.26.300.nupkg.sha512",
     "C:\\Users\\EVERTON\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",

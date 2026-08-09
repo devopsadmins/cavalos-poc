@@ -1,10 +1,9 @@
-Usando as configurações de inicialização de C:\Users\EVERTON\source\repos\CavalosPOC\CavalosPOC\Properties\launchSettings.json...
 info: Microsoft.Hosting.Lifetime[14]
       Now listening on: http://localhost:5216
 info: Microsoft.Hosting.Lifetime[0]
       Application started. Press Ctrl+C to shut down.
 info: Microsoft.Hosting.Lifetime[0]
-      Hosting environment: Development
+      Hosting environment: Production
 info: Microsoft.Hosting.Lifetime[0]
       Content root path: C:\Users\EVERTON\source\repos\CavalosPOC\CavalosPOC
 warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
@@ -33,3 +32,27 @@ dbug: CavalosPOC.Data.CavaloRepository[0]
       Parâmetro Oracle: ParameterName=iNome, OracleDbType=Varchar2, Value=GARCELINO
 info: CavalosPOC.Data.CavaloRepository[0]
       Consulta retornou 0 registros para nome=garcelino
+dbug: CavalosPOC.Data.CavaloRepository[0]
+      Executando SQL: 
+                      SELECT 
+                          COALESCE(T1.REG_REG, C1.CAV_REG) AS REG, 
+                          C1.CAV_NOM, 
+                          C1.CAV_ASTERISCO 
+                      FROM ABCCA.CAVALO C1
+                      LEFT JOIN ABCCA.REG T1 ON C1.CAV_SEQ = T1.REG_CAV_SEQ
+                      WHERE UPPER(C1.CAV_NOM_SACEN) LIKE '%' || :iNome || '%'
+                      ORDER BY C1.CAV_NOM | Parâmetros: {iNome: CARHIF}
+dbug: CavalosPOC.Data.CavaloRepository[0]
+      SQL com parâmetro: 
+                      SELECT 
+                          COALESCE(T1.REG_REG, C1.CAV_REG) AS REG, 
+                          C1.CAV_NOM, 
+                          C1.CAV_ASTERISCO 
+                      FROM ABCCA.CAVALO C1
+                      LEFT JOIN ABCCA.REG T1 ON C1.CAV_SEQ = T1.REG_CAV_SEQ
+                      WHERE UPPER(C1.CAV_NOM_SACEN) LIKE '%' || 'CARHIF' || '%'
+                      ORDER BY C1.CAV_NOM
+dbug: CavalosPOC.Data.CavaloRepository[0]
+      Parâmetro Oracle: ParameterName=iNome, OracleDbType=Varchar2, Value=CARHIF
+info: CavalosPOC.Data.CavaloRepository[0]
+      Consulta retornou 4 registros para nome=carhif

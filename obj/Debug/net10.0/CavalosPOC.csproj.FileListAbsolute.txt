@@ -6,7 +6,6 @@ C:\Users\EVERTON\source\repos\CavalosPOC\CavalosPOC\obj\Debug\net10.0\CavalosPOC
 C:\Users\EVERTON\source\repos\CavalosPOC\CavalosPOC\obj\Debug\net10.0\CavalosPOC.csproj.CoreCompileInputs.cache
 C:\Users\EVERTON\source\repos\CavalosPOC\CavalosPOC\obj\Debug\net10.0\CavalosPOC.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\EVERTON\source\repos\CavalosPOC\CavalosPOC\obj\Debug\net10.0\CavalosPOC.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\EVERTON\source\repos\CavalosPOC\CavalosPOC\bin\Debug\net10.0\appsettings.Development.json
 C:\Users\EVERTON\source\repos\CavalosPOC\CavalosPOC\bin\Debug\net10.0\appsettings.json
 C:\Users\EVERTON\source\repos\CavalosPOC\CavalosPOC\bin\Debug\net10.0\CavalosPOC.staticwebassets.endpoints.json
 C:\Users\EVERTON\source\repos\CavalosPOC\CavalosPOC\bin\Debug\net10.0\CavalosPOC.exe

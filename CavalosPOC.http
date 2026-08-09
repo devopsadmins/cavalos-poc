@@ -1,6 +1,0 @@
-@CavalosPOC_HostAddress = http://localhost:5216
-
-GET {{CavalosPOC_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
