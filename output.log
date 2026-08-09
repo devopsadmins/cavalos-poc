@@ -1,0 +1,107 @@
+Usando as configurações de inicialização de C:\Users\EVERTON\source\repos\CavalosPOC\CavalosPOC\Properties\launchSettings.json...
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5216
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\EVERTON\source\repos\CavalosPOC\CavalosPOC
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+dbug: CavalosPOC.Data.CavaloRepository[0]
+      Executando SQL: 
+                      SELECT 
+                          COALESCE(T1.REG_REG, C1.CAV_REG) AS REG, 
+                          C1.CAV_NOM, 
+                          C1.CAV_ASTERISCO 
+                      FROM ABCCA.CAVALO C1
+                      LEFT JOIN ABCCA.REG T1 ON C1.CAV_SEQ = T1.REG_CAV_SEQ
+                      WHERE C1.CAV_NOM_SACEN LIKE '%' || :iNome || '%'
+                      ORDER BY C1.CAV_NOM | Parâmetros: {iNome: GARCELINO}
+dbug: CavalosPOC.Data.CavaloRepository[0]
+      Executando SQL: 
+                      SELECT 
+                          COALESCE(T1.REG_REG, C1.CAV_REG) AS REG, 
+                          C1.CAV_NOM, 
+                          C1.CAV_ASTERISCO 
+                      FROM ABCCA.CAVALO C1
+                      LEFT JOIN ABCCA.REG T1 ON C1.CAV_SEQ = T1.REG_CAV_SEQ
+                      WHERE C1.CAV_NOM_SACEN LIKE '%' || :iNome || '%'
+                      ORDER BY C1.CAV_NOM | Parâmetros: {iNome: carhif}
+dbug: CavalosPOC.Data.CavaloRepository[0]
+      SQL com parâmetro: 
+                      SELECT 
+                          COALESCE(T1.REG_REG, C1.CAV_REG) AS REG, 
+                          C1.CAV_NOM, 
+                          C1.CAV_ASTERISCO 
+                      FROM ABCCA.CAVALO C1
+                      LEFT JOIN ABCCA.REG T1 ON C1.CAV_SEQ = T1.REG_CAV_SEQ
+                      WHERE C1.CAV_NOM_SACEN LIKE '%' || 'carhif' || '%'
+                      ORDER BY C1.CAV_NOM
+dbug: CavalosPOC.Data.CavaloRepository[0]
+      SQL com parâmetro: 
+                      SELECT 
+                          COALESCE(T1.REG_REG, C1.CAV_REG) AS REG, 
+                          C1.CAV_NOM, 
+                          C1.CAV_ASTERISCO 
+                      FROM ABCCA.CAVALO C1
+                      LEFT JOIN ABCCA.REG T1 ON C1.CAV_SEQ = T1.REG_CAV_SEQ
+                      WHERE C1.CAV_NOM_SACEN LIKE '%' || 'GARCELINO' || '%'
+                      ORDER BY C1.CAV_NOM
+dbug: CavalosPOC.Data.CavaloRepository[0]
+      Parâmetro Oracle: ParameterName=iNome, OracleDbType=Varchar2, Value=GARCELINO
+dbug: CavalosPOC.Data.CavaloRepository[0]
+      Parâmetro Oracle: ParameterName=iNome, OracleDbType=Varchar2, Value=carhif
+info: CavalosPOC.Data.CavaloRepository[0]
+      Consulta retornou 0 registros para nome=carhif
+info: CavalosPOC.Data.CavaloRepository[0]
+      Consulta retornou 0 registros para nome=GARCELINO
+dbug: CavalosPOC.Data.CavaloRepository[0]
+      Executando SQL: 
+                      SELECT 
+                          COALESCE(T1.REG_REG, C1.CAV_REG) AS REG, 
+                          C1.CAV_NOM, 
+                          C1.CAV_ASTERISCO 
+                      FROM ABCCA.CAVALO C1
+                      LEFT JOIN ABCCA.REG T1 ON C1.CAV_SEQ = T1.REG_CAV_SEQ
+                      WHERE C1.CAV_NOM_SACEN LIKE '%' || :iNome || '%'
+                      ORDER BY C1.CAV_NOM | Parâmetros: {iNome: carhif}
+dbug: CavalosPOC.Data.CavaloRepository[0]
+      SQL com parâmetro: 
+                      SELECT 
+                          COALESCE(T1.REG_REG, C1.CAV_REG) AS REG, 
+                          C1.CAV_NOM, 
+                          C1.CAV_ASTERISCO 
+                      FROM ABCCA.CAVALO C1
+                      LEFT JOIN ABCCA.REG T1 ON C1.CAV_SEQ = T1.REG_CAV_SEQ
+                      WHERE C1.CAV_NOM_SACEN LIKE '%' || 'carhif' || '%'
+                      ORDER BY C1.CAV_NOM
+dbug: CavalosPOC.Data.CavaloRepository[0]
+      Parâmetro Oracle: ParameterName=iNome, OracleDbType=Varchar2, Value=carhif
+info: CavalosPOC.Data.CavaloRepository[0]
+      Consulta retornou 0 registros para nome=carhif
+dbug: CavalosPOC.Data.CavaloRepository[0]
+      Executando SQL: 
+                      SELECT 
+                          COALESCE(T1.REG_REG, C1.CAV_REG) AS REG, 
+                          C1.CAV_NOM, 
+                          C1.CAV_ASTERISCO 
+                      FROM ABCCA.CAVALO C1
+                      LEFT JOIN ABCCA.REG T1 ON C1.CAV_SEQ = T1.REG_CAV_SEQ
+                      WHERE C1.CAV_NOM_SACEN LIKE '%' || :iNome || '%'
+                      ORDER BY C1.CAV_NOM | Parâmetros: {iNome: CARHIF}
+dbug: CavalosPOC.Data.CavaloRepository[0]
+      SQL com parâmetro: 
+                      SELECT 
+                          COALESCE(T1.REG_REG, C1.CAV_REG) AS REG, 
+                          C1.CAV_NOM, 
+                          C1.CAV_ASTERISCO 
+                      FROM ABCCA.CAVALO C1
+                      LEFT JOIN ABCCA.REG T1 ON C1.CAV_SEQ = T1.REG_CAV_SEQ
+                      WHERE C1.CAV_NOM_SACEN LIKE '%' || 'CARHIF' || '%'
+                      ORDER BY C1.CAV_NOM
+dbug: CavalosPOC.Data.CavaloRepository[0]
+      Parâmetro Oracle: ParameterName=iNome, OracleDbType=Varchar2, Value=CARHIF
+info: CavalosPOC.Data.CavaloRepository[0]
+      Consulta retornou 4 registros para nome=CARHIF
